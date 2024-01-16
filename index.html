@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 SEM SGPA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"> <!-- Replace with the actual path to your Tailwind CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image:url(Untitled.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #calculator {
+            
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 0 auto;
+            
+            
+          
+        }
+        
+
+        #calculator:hover {
+            transform: scale(1.05);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        label:hover {
+            color: #007bff; /* Example color change on hover */
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        select:hover {
+            border-color: #007bff; /* Example border color change on hover */
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Example background color change on hover */
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            transition: font-size 0.3s ease-in-out;
+        }
+
+        #result:hover {
+            font-size: 24px; /* Example font size change on hover */
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+      
+        <h1>FAIL HO YAA PASS SHARE KARNA NAA BHULE</h1>
+        <h1>CREATED BY LAK$hYA</h1>
+        <h2>CGPA Calculator</h2>
+        <form id="cgpaForm">
+            <label for="subject1">HUMAN VALUES</label>
+            <select id="subject1" class="grade">
+                <option value="10.0">A++</option>
+                <option value="9.0">A+</option>
+                <option value="8.5">A</option>
+                <option value="8.0">B+</option>
+                <option value="7.5">B</option>
+                <option value="7.0">C+</option>
+                <option value="6.5">C</option>
+                <option value="6.0">D+</option>
+                <option value="5.5">D</option>
+                <option value="5.0">E+</option>
+                <option value="4.0">E</option>
+                <option value="0.0">F</option>
+            </select>
+            <label for="subject2">hv lab </label>
+            <select id="subject2" class="grade">
+                <option value="10.0">A++</option>
+                <option value="9.0">A+</option>
+                <option value="8.5">A</option>
+                <option value="8.0">B+</option>
+                <option value="7.5">B</option>
+                <option value="7.0">C+</option>
+                <option value="6.5">C</option>
+                <option value="6.0">D+</option>
+                <option value="5.5">D</option>
+                <option value="5.0">E+</option>
+                <option value="4.0">E</option>
+                <option value="0.0">F</option>
+            </select>
+            <label for="subject3">maths</label>
+            <select id="subject3" class="grade">
+                <option value="10.0">A++</option>
+                <option value="9.0">A+</option>
+                <option value="8.5">A</option>
+                <option value="8.0">B+</option>
+                <option value="7.5">B</option>
+                <option value="7.0">C+</option>
+                <option value="6.5">C</option>
+                <option value="6.0">D+</option>
+                <option value="5.5">D</option>
+                <option value="5.0">E+</option>
+                <option value="4.0">E</option>
+                <option value="0.0">F</option>
+            </select>
+            <label for="subject4">physics </label>
+            <select id="subject4" class="grade">
+                <option value="10.0">A++</option>
+                <option value="9.0">A+</option>
+                <option value="8.5">A</option>
+                <option value="8.0">B+</option>
+                <option value="7.5">B</option>
+                <option value="7.0">C+</option>
+                <option value="6.5">C</option>
+                <option value="6.0">D+</option>
+                <option value="5.5">D</option>
+                <option value="5.0">E+</option>
+                <option value="4.0">E</option>
+                <option value="0.0">F</option>
+            </select>
+            <label for="subject5">physics lab </label>
+            <select id="subject5" class="grade">
+                <option value="10.0">A++</option>
+                <option value="9.0">A+</option>
+                <option value="8.5">A</option>
+                <option value="8.0">B+</option>
+                <option value="7.5">B</option>
+                <option value="7.0">C+</option>
+                <option value="6.5">C</option>
+                <option value="6.0">D+</option>
+                <option value="5.5">D</option>
+                <option value="5.0">E+</option>
+                <option value="4.0">E</option>
+                <option value="0.0">F</option>
+            </select>
+            <label for="subject6">pps</label>
+            <select id="subject6" class="grade">
+                <option value="10.0">A++</option>
+                <option value="9.0">A+</option>
+                <option value="8.5">A</option>
+                <option value="8.0">B+</option>
+                <option value="7.5">B</option>
+                <option value="7.0">C+</option>
+                <option value="6.5">C</option>
+                <option value="6.0">D+</option>
+                <option value="5.5">D</option>
+                <option value="5.0">E+</option>
+                <option value="4.0">E</option>
+                <option value="0.0">F</option>
+            </select>
+            <label for="subject7">bee </label>
+            <select id="subject7" class="grade">
+                <option value="10.0">A++</option>
+                <option value="9.0">A+</option>
+                <option value="8.5">A</option>
+                <option value="8.0">B+</option>
+                <option value="7.5">B</option>
+                <option value="7.0">C+</option>
+                <option value="6.5">C</option>
+                <option value="6.0">D+</option>
+                <option value="5.5">D</option>
+                <option value="5.0">E+</option>
+                <option value="4.0">E</option>
+                <option value="0.0">F</option>
+            </select>
+            <label for="subject8">cp lab</label>
+            <select id="subject8" class="grade">
+                <option value="10.0">A++</option>
+                <option value="9.0">A+</option>
+                <option value="8.5">A</option>
+                <option value="8.0">B+</option>
+                <option value="7.5">B</option>
+                <option value="7.0">C+</option>
+                <option value="6.5">C</option>
+                <option value="6.0">D+</option>
+                <option value="5.5">D</option>
+                <option value="5.0">E+</option>
+                <option value="4.0">E</option>
+                <option value="0.0">F</option>
+            </select>
+            <label for="subject9">bee lab</label>
+            <select id="subject9" class="grade">
+                <option value="10.0">A++</option>
+                <option value="9.0">A+</option>
+                <option value="8.5">A</option>
+                <option value="8.0">B+</option>
+                <option value="7.5">B</option>
+                <option value="7.0">C+</option>
+                <option value="6.5">C</option>
+                <option value="6.0">D+</option>
+                <option value="5.5">D</option>
+                <option value="5.0">E+</option>
+                <option value="4.0">E</option>
+                <option value="0.0">F</option>
+            </select>
+            <label for="subject10">caeg</label>
+            <select id="subject10" class="grade">
+                <option value="10.0">A++</option>
+                <option value="9.0">A+</option>
+                <option value="8.5">A</option>
+                <option value="8.0">B+</option>
+                <option value="7.5">B</option>
+                <option value="7.0">C+</option>
+                <option value="6.5">C</option>
+                <option value="6.0">D+</option>
+                <option value="5.5">D</option>
+                <option value="5.0">E+</option>
+                <option value="4.0">E</option>
+                <option value="0.0">F</option>
+            </select>
+            <label for="subject11">sodeca</label>
+            <select id="subject11" class="grade">
+                <option value="10.0">A++</option>
+                <option value="9.0">A+</option>
+                <option value="8.5">A</option>
+                <option value="8.0">B+</option>
+                <option value="7.5">B</option>
+                <option value="7.0">C+</option>
+                <option value="6.5">C</option>
+                <option value="6.0">D+</option>
+                <option value="5.5">D</option>
+                <option value="5.0">E+</option>
+                <option value="4.0">E</option>
+                <option value="0.0">F</option>
+            </select>
+           
+
+            <button type="button" id="calculateButton">Calculate CGPA</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        
+        const credits = {
+            subject1: 2,
+            subject2: 1,
+            subject3: 4,
+            subject4: 4,
+            subject5: 1,
+            subject6: 2,
+            subject7: 2,
+            subject8: 1.5,
+            subject9: 1,
+            subject10:1.5,
+            subject11:0.5,
+            
+        };
+
+        document.getElementById("calculateButton").addEventListener("click", function() {
+            const gradeElements = document.querySelectorAll(".grade");
+            let totalCredits = 0;
+            let totalGradePoints = 0;
+
+            gradeElements.forEach((gradeElement, index) => {
+                const selectedGrade = parseFloat(gradeElement.value);
+                const subjectId = `subject${index + 1}`;
+
+                if (!isNaN(selectedGrade)) {
+                    const credit = credits[subjectId];
+                    totalCredits += credit;
+                    totalGradePoints += selectedGrade * credit;
+                }
+            });
+
+            const cgpa = totalGradePoints / totalCredits;
+            const resultElement = document.getElementById("result");
+            resultElement.textContent = `Your CGPA is: ${cgpa.toFixed(2)}`;
+        });
+    </script>
+</body>
+</html>
